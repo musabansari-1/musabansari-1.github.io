@@ -306,13 +306,21 @@ footer {
 #about {
   padding: 75px 15px;
   border-bottom: 1px solid #dcd9d9;
+  background-image: url('https://images.unsplash.com/photo-1593624212548-d1aaa54d8057?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  background-size: auto;
 }
 #about h2 {
   color: #374054;
 }
 #about p {
-  color: #74808a;
+  color: black;
+  font-size: 2rem;
+  padding: 2rem;
   margin: 0;
+  border-radius: 15px;
 }
 #experience {
   padding: 50px 15px;
@@ -407,6 +415,8 @@ footer {
   color: #374054;
 }
 #education {
+  background-image: url('https://images.unsplash.com/photo-1506543730435-e2c1d4553a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-position: center;
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
@@ -495,6 +505,10 @@ footer {
   display: none;
 }
 #skills {
+  background-image: url('https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 50px 15px;
   text-align: center;
 }
@@ -583,9 +597,7 @@ footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: 0.5s ease all;
 }
-#contact-form button:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
+
 .optional-section {
   padding: 50px 15px;
   text-align: center;
@@ -739,10 +751,21 @@ footer {
 }
 
 #certifications {
+    background: url('../images/plans-background.jpg') center/cover;
+    /* filter: blur(2px); */
+    background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+#certifications h2 {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .img-hover-zoom {
@@ -750,7 +773,11 @@ footer {
   width: 66.66vmin;
   margin: auto ;
   overflow: hidden;
-  margin: 16.67vh auto; /* [1.2] Hide the overflowing of child elements */
+  margin: 16.67vh auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px black;
+  /* [1.2] Hide the overflowing of child elements */
 }
 
 .img-hover-zoom img {
@@ -761,4 +788,34 @@ footer {
 
 .img-hover-zoom:hover {
   transform: scale(1.5);
+}
+
+#contact-form button{
+  margin-top: 6rem;
+  color:white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 5px 5px 5px black;
+  overflow: hidden;
+}
+
+
+/* #contact-form button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+} */
+
+#contact-form button:hover {
+  margin-top: 6rem;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 5px 5px 5px black;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: black;
+  color: white;
 }
